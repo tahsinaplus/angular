@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let temp of salesPersonList" [ngStyle]="{ 'background: #42A948;': temp.salesVolume >= 60000 }">
+        <tr *ngFor="let temp of salesPersonList" [ngClass]="{ 'highlight': temp.salesVolume >= 60000 }">
             <td>{{temp.firstName}}</td>
             <td>{{temp.lastName}}</td>
             <td>{{temp.email}}</td>
